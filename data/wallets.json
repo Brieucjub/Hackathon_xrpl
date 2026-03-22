@@ -1,0 +1,12 @@
+{
+  "fournisseur_cern": {
+    "name": "CERN",
+    "address": "rnyEVQxbxiARL8PrhqR8Y99is5WMXspjKN",
+    "seed": "sEdTcq74ipMWPzRWSh6QV55BeNvcnTG"
+  },
+  "chercheur_arnaud": {
+    "name": "Arnaud",
+    "address": "rPv8RcePEWssuhkEUJSZbqfUFx1xtJjXJw",
+    "seed": "sEdVLmq97C6k2NzzMs1cWBS23u1nCkw"
+  }
+}
