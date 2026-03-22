@@ -1,10 +1,3 @@
-"""
-TelescopeGrid — Bridge démo hackathon
-
-Usage :
-  python3 bridge_telescope.py
-"""
-
 import asyncio
 import curses
 import hashlib
@@ -26,7 +19,7 @@ from xrpl_client import client_create_escrow, escrow_finish, EscrowJob, pay_prov
 
 COMMISSION = 0.10
 
-# ─── Objets célèbres du ciel ──────────────────────────────────────────────────
+#  Objets célèbres du ciel 
 
 SKY_OBJECTS = [
     {"name": "Nébuleuse d'Orion",     "ra": 83.82,  "dec": -5.39},
@@ -51,7 +44,7 @@ BG_STARS = [
 ]
 
 
-# ─── Contrôleur télescope (curses) ───────────────────────────────────────────
+#  Contrôleur télescope (curses) 
 
 class TelescopeController:
 
@@ -70,11 +63,11 @@ class TelescopeController:
         # Initialiser les couleurs
         curses.start_color()
         curses.use_default_colors()
-        curses.init_pair(1, curses.COLOR_GREEN,  -1)  # réticule
-        curses.init_pair(2, curses.COLOR_YELLOW, -1)  # étoiles / captures
-        curses.init_pair(3, curses.COLOR_CYAN,   -1)  # coords / info
-        curses.init_pair(4, curses.COLOR_WHITE,  -1)  # bordure
-        curses.init_pair(5, curses.COLOR_RED,    -1)  # alerte
+        curses.init_pair(1, curses.COLOR_GREEN,  -1)  
+        curses.init_pair(2, curses.COLOR_YELLOW, -1) 
+        curses.init_pair(3, curses.COLOR_CYAN,   -1)  
+        curses.init_pair(4, curses.COLOR_WHITE,  -1) 
+        curses.init_pair(5, curses.COLOR_RED,    -1)  
 
     def ra_to_hms(self, ra):
         ra = ra % 360
